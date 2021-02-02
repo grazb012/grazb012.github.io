@@ -1,0 +1,21 @@
+body {
+	background-color: #9dc183;
+	font-family: Baskerville;
+}
+
+h2 {
+	text-align: center;
+	padding-top: 5vh;
+}
+
+p {
+	padding-top: 3vh;
+	padding-right: 20vw;
+	padding-left: 20vw;
+}
+
+.rabbit {
+	width: 20%;
+	height: 30%;
+	padding-left: 40%;
+}
