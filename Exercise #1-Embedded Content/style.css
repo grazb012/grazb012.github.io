@@ -1,0 +1,35 @@
+body {
+	 background-image: linear-gradient(to right, rgba(102, 0, 204) , rgba(204, 0, 153));
+	 background-size: 100vw;
+}
+
+.title {
+	font-family: 'Corben', cursive;
+	text-align: center;
+}
+
+.embedded {
+	text-align: center;
+}
+
+#youtube {
+	padding: 5vh;
+	width: 50%;
+}
+
+#instagram {
+	width: 3%;
+	position: absolute;
+	padding: 5vw;
+	padding-left: 10vw;
+}
+
+#store {
+	width: 30%;
+	height: 80%;
+	position: relative;
+	top: 70%;
+	left: 20vw;
+	padding: 5vw;
+	padding-right: 10vw;
+}
