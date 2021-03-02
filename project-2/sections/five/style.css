@@ -1,9 +1,78 @@
-h1 {
-	text-align: center;
-	font-family: masqualero, Baskerville, Georgia, serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 10em;
-	color: rgba(0,0,0,90%);
+
+
+.text {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 2em;
 }
 
+.bottomtext {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 10vh; 
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 1em;
+}
+
+.the-end {
+	text-align: center;
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 10em;
+	padding-top: 30vh;
+	text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(16,106,63);
+}
+
+a:active {
+  color: rgb(16,106,63);
+}
+
+.end {
+	background-color: rgb(136,17,60);
+	color: white;
+	text-decoration: none;
+}
+
+.begin {
+	color: rgb(16,106,63);
+	text-decoration: none;
+}
+
+.end {
+	color: rgb(136,17,60);
+	text-decoration: none;
+}
+
+.column {
+	float: left;
+  	width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+    	width: 100%;
+  	}
+  	.the-end {
+  		color: rgb(16,106,63);
+  	}
+}

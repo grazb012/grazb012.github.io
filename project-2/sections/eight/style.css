@@ -1,9 +1,55 @@
-h1 {
-	text-align: center;
-	font-family: masqualero, Baskerville, Georgia, serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 10em;
-	color: rgba(0,0,0,90%);
+.grad {
+	background-image: linear-gradient(white, black, black);
+	position: relative;
+	width: 100vw;
+	height: auto;
 }
 
+
+p {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 2em;
+}
+
+.last {
+	text-align: center;
+	font-size: 1em;
+}
+
+.the-end {
+	display: block;
+	margin: auto;
+	text-align: center;
+	margin-top: 0vh;
+	margin-bottom: 0vh;
+	font-size: 7em;
+}
+
+@media screen and (max-width: 800px) {
+  	.the-end {
+  		color: rgb(16,106,63);
+  	}
+}
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(16,106,63);
+}
+
+a:active {
+  color: rgb(16,106,63);
+}

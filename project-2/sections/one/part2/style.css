@@ -1,0 +1,58 @@
+.column {
+	float: left;
+  	width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+    	width: 100%;
+  	}
+	#block {
+  		width: 90vw;
+  		display: block;
+  		margin: auto;
+		background-color: rgb(136,17,60);
+		color: white;
+		font-size: .5em;
+	}
+	.begin {
+		display: block;
+		margin: auto;
+	}
+}
+
+.text {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 2.5em;
+}
+
+#down {
+	margin-top: 75vh;
+}
+
+.end {
+	margin-left: 15vw;
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 1.5em;
+	color: rgb(136,17,60);
+	text-decoration: none;
+}
+
+.begin {
+	display: block;
+	width: 50vw;
+	text-align: center;
+	margin-bottom: 10vh;
+	font-family: "Big Caslon Reg", Baskerville, Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+	font-size: 1.5em;
+	color: rgb(16,106,63);
+	text-decoration: none;
+}
