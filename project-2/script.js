@@ -1,16 +1,16 @@
 let btn = document.getElementById('btn')
 
-var links = new Array()
-		links[0]='sections/one/index.html',
-		links[1]='sections/two/index.html',
-		links[2]='sections/three/index.html',
-		links[3]='sections/four/index.html',
-		links[4]='sections/five/index.html',
-		links[5]='sections/six/index.html',
-		links[6]='sections/seven/index.html',
-		links[7]='sections/eight/index.html',
-		links[8]='sections/nine/index.html',
-		links[9]='sections/ten/index.html',
+let links = [link0, link1, link2, link3, link4, link5, link6, link7, link8, link9]
+	link0 ='sections/one/index.html'
+	link1 ='sections/two/index.html'
+	link2 ='sections/three/index.html'
+	link3 ='sections/four/index.html'
+	link4 ='sections/five/index.html'
+	link5 ='sections/six/index.html'
+	link6 ='sections/seven/index.html'
+	link7 ='sections/eight/index.html'
+	link8 ='sections/nine/index.html'
+	link9 ='sections/ten/index.html'
 
 
   function randomLink() {
