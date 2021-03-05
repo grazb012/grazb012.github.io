@@ -1,0 +1,94 @@
+.nav-bar {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 3vh;
+	color: white;
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 90%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+	background-color: darkgray;
+}
+
+.text {
+	color: black;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2vw;
+	margin-right: 10vw;
+	margin-left: 10vw;
+}
+
+.header {
+	font-size: 5em;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 20vh;
+}
+
+.subheader {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.name {
+	font-size: 1.5em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.caption {
+	font-family: ff-tisa-web-pro, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+	line-height: 120%;
+}
+
+img {
+	width: 50vw;
+	display: block;
+	margin: auto;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.nav-bar {
+		font-size: 10px;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.subheader {
+		font-size: 17px;
+	
+	}
+
+	.caption {
+		font-size: 10px;
+	}
+}

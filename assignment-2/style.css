@@ -1,0 +1,90 @@
+body {
+	background-color: black;
+	max-width: 100%;
+	overflow-x: hidden;
+
+}
+
+.nav-bar {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 3vh;
+	color: white;
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 90%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+	background-color: darkgray;
+}
+
+.text {
+	text-align: center;
+	color: white;
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 6vw;
+	margin-bottom: 10vh;
+}
+
+.header {
+	margin-top: 20vh;
+	margin-bottom: 0px;
+}
+
+.subtext {
+	font-size: 3vw;
+	font-weight: 400;
+}
+
+.main-photo {
+	width: 80vw;
+	height: auto;
+	display: block;
+	margin: auto;
+	margin-bottom: 40vh;
+}
+
+.video {
+	display: block;
+	margin: auto;
+	margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 700px) {
+	.main-photo {
+		width: 100vw;
+	}
+
+	.video {
+		width: 100vw;
+	}
+
+	.nav-bar {
+		font-size: 10px;
+	}
+}
+
+
+
+
