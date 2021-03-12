@@ -1,0 +1,123 @@
+@media only screen and (max-width: 600px;) {
+	.circle {
+		margin: 10px;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		background-color: black;
+		border-radius: 50%;
+		animation-name: bounce;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-delay: 0s;
+		animation-direction: alternate;
+	}
+
+	@keyframes bounce {
+		from, to {
+			bottom: 0;
+			animation-timing-function: ease-out;
+		}
+		50% {
+			bottom: 80vh;
+			animation-timing-function: ease-in;
+		}
+	}
+}
+
+
+@media only screen and (min-width: 768px;) {
+	.blob-1 {
+		width: 300px;
+		height: 300px;
+		position: relative;
+		background-color: black;
+		border-radius: 40%;
+		border-bottom-left-radius: 60%;
+		border-top-right-radius: 20%;
+		animation-name: blackblob;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-delay: 0s;
+	}
+
+	.blob-2 {
+		width: 300px;
+		height: 300px;
+		position: relative;
+		background-color: white;
+		border-radius: 80%;
+		border-bottom-left-radius: 30%;
+		border-top-right-radius:40%;
+		border-bottom-right-radius: 90%;
+		animation-name: whiteblob;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+		animation-delay: 0s;
+	}
+
+	.circle {
+		display: none;
+	}
+
+
+	@keyframes blackblob {
+		0% {top: -50vh; left: -20vw;}
+		50% {top: 25vh; left: 40vw;}
+		100%{top: 80vh; left: 100vw;}
+	}
+
+	@keyframes whiteblob {
+		0% {top: 50vh; left: 100vw;}
+		50% {top: -20vh; left: 30vw;}
+		100%{top: -80vh; left: -20vw;}
+	}
+}
+
+
+@media only screen and (min-width: 992px;) {
+	.square {
+		width: 500px;
+		height: 500px;
+		background-color: black;
+		animation-name: spin;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+		animation-delay: 2s;
+	}
+
+	.circle {
+		display: none;
+	}
+
+	.blob-1 {
+		display: none;
+	}
+
+	.blob-2 {
+		display: none;
+	}
+
+	@keyframes spin {
+		from {transform: rotate(0deg);}
+		50% {background-color: white;}
+		to {transform: rotate(360deg);}
+	}
+}
+
+body {
+	background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
