@@ -1,0 +1,49 @@
+body {
+	background-color: #fed8b1;
+	font-family: Helvetica;
+}
+
+.header {
+	font-family: Helvetica;
+}
+
+.container {
+	display: flex;
+}
+
+.image {
+	width: 50vw;
+}
+
+.circle {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle();
+	margin-right: 5vw;
+}
+
+.table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 2px solid navy;
+	padding: 1vw;
+}
+
+th {
+	background-color: skyblue;
+}
+
+.col-1 {
+	background-color: orange;
+}
+
+.col-2 {
+	background-color: lightyellow;
+}
+
+
+
