@@ -1,0 +1,131 @@
+body {
+	background-color: #161B22;
+}
+
+#button {
+	display: block;
+	margin: auto;
+	background-color: #161B22;
+	text-decoration: none;
+	border: 1px solid #161B22;
+}
+
+#button:hover {
+	border: 1px solid hotpink;
+}
+
+h1 {
+	font-family: swear-display, serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 5em;
+	color: #fffdd0;
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 2vh;
+	line-height: 1;
+}
+
+h2 {
+	font-family: swear-text, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4em;
+	color: #fffdd0;
+	text-align: center;
+	border: 1px solid #fffdd0;
+	margin-bottom: 3vh;
+	padding-bottom: 10px;
+}
+
+h3{
+	font-family: swear-text, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2em;
+	color: #fffdd0;
+	margin-top: 3vh;
+	margin-bottom: 1.5vh;
+}
+
+p {
+	font-family: sweet-sans-pro, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: #fffdd0;
+	margin: .5vh;
+	margin-left: 3vw;
+}
+
+p:hover {
+	color: hotpink;
+}
+
+/* unvisited link */
+a:link {
+  color: #fffdd0;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #fffdd0;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
+}
+
+.column {
+	width: 400px;
+	display: block;
+	margin: auto;
+	margin-bottom: 8vh;
+}
+
+@media only screen and (max-width: 800px) {
+	.column {
+		width: 300px;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.column {
+		width: 200px;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: .8em;
+	}
+}
