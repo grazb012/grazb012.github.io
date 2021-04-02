@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    margin-left: 20px;
+}
+
+.album-container {
+	display: inline-block;
+}
+
+.title {
+	text-align: center;
+}
+
+img {
+	width: 400px;
+}
