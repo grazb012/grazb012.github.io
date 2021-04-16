@@ -28,16 +28,77 @@ body {
 	font-size: 2.25vw;
 }
 
+.ingredient-filters {
+	margin-top: 20vh;
+	display: flex;
+}
+
+.ingredient-filters label {
+	position: relative;
+	display: block;
+	padding: .5vw;
+	font-size: 1.5rem;
+}
+
+.column {
+	flex: 50%;
+}
+
+.container {
+	margin-top: 20vh;
+}
+
 .title {
 	text-align: center;
 }
 
 .dessert-container {
 	display: block;
+	width: 200px;
 	padding: 1rem;
 	margin: 5vh;
+	background-color: pink;
 }
 
 .image {
-	width: 100px;
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
 }
+
+/*.image.active {
+	display: block;
+	
+}*/
+
+.name {
+	display: none;
+}
+
+.name.active {
+	display: block;
+}
+
+.country {
+	display: none;
+}
+
+.country.active {
+	display: block;
+}
+
+.continent {
+	display: none;
+}
+
+.continent.active {
+	display: block;
+}
+
+.ingredients {
+	display: none;
+}
+
+.ingredients.active {
+	display: block;
+	font-size

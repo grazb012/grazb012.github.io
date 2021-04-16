@@ -40,7 +40,12 @@ function gotAllDesserts(err) {
 
   // call functions to log and show the books
   consoleLogDesserts();
-  showDesserts();
+  try {
+   showDesserts();
+} catch(e) {
+    console.error(e);
+}
+
 }
 
 // just loop through the books and console.log them
@@ -56,14 +61,14 @@ function showDesserts() {
   console.log("showDesserts()");
   desserts.forEach((dessert,i) => {
 
-    //create container 
+    //create container for 
     var dessertContainer = document.createElement("div");
     dessertContainer.classList.add("dessert-container");
     document.querySelector(".container").append(dessertContainer);
 
      //add images
     var dessertImage = document.createElement("img");
-    dessertName.classList.add("image")
+    dessertImage.classList.add("image")
     dessertImage.src = dessert.fields.images[0].url;
     document.body.append(dessertImage);
     dessertContainer.append(dessertImage);
@@ -75,29 +80,57 @@ function showDesserts() {
 		dessertContainer.append(dessertName);
 
     //add country
-		var country = document.createElement("h1");
+		var country = document.createElement("p");
     country.classList.add("country")
 		country.innerText = dessert.fields.country;
     dessertContainer.append(country);
 
     //add continent
-    var continent = document.createElement("h1");
+    var continent = document.createElement("p");
     continent.classList.add("continent")
     continent.innerText = dessert.fields.continent;
     dessertContainer.append(continent); 
 
     //add ingredients
-    var ingredients = document.createElement("h1");
+    var ingredients = document.createElement("p");
     ingredients.classList.add("ingredients")
     ingredients.innerText = dessert.fields.ingredients;
     dessertContainer.append(ingredients);
 
+    //add event listener to have dessert information appear and disappear onclick
+    dessertImage.addEventListener("click", function(){
+       dessertName.classList.toggle("active");
+       country.classList.toggle("active");
+       continent.classList.toggle("active");
+       ingredients.classList.toggle("active");
+
+      });
+
+    //get ingredients field from airtable
+    //loop through array and add each ingredient as a class name
+    dessertContainer.setAttribute('data-ingredients', dessert.fields.ingredients.join(' '));
+
+    //add event listener to filter to add active class
+    //add event listener to input box
+    //onclick input box show image
+    //create function to image toggle with checkbox onclick
+    var almondsFilter = document.querySelector(".almonds-box");
+    almondsFilter.addEventListener("click", function() {
+      if (dessertContainer.classList.contains("almonds")) {
+        dessertImage.style.display = "block";
+      }
+    })
+
+
+  });
+ }
+
+
 //the HTML element you clicked on:
-let element=event.currentTarget;
+/*let element=event.currentTarget;
 //retrieve the number
 let number=element.dataset.image;
 //gets the dessert data corresponding to the image you clicked on
 let currentImage=desserts[number];
+*/
 
-	});
- }
