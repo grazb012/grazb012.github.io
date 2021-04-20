@@ -42,13 +42,13 @@ function gotAllDesserts(err) {
   consoleLogDesserts();
   try {
    showDesserts();
-} catch(e) {
-    console.error(e);
+   enableFilters();
+  } catch(e) {
+      console.error(e);
+  }
 }
 
-}
-
-// just loop through the books and console.log them
+// just loop through the desserts and console.log them
 function consoleLogDesserts() {
   console.log("consoleLogDesserts()");
   desserts.forEach(dessert => {
@@ -57,9 +57,9 @@ function consoleLogDesserts() {
 }
 
 //look through data, create elements
-function showDesserts() {
+function showDesserts(array = desserts) {
   console.log("showDesserts()");
-  desserts.forEach((dessert,i) => {
+  array.forEach((dessert,i) => {
 
     //create container for 
     var dessertContainer = document.createElement("div");
@@ -97,29 +97,43 @@ function showDesserts() {
     ingredients.innerText = dessert.fields.ingredients;
     dessertContainer.append(ingredients);
 
+    //add where to eat info
+    var info = document.createElement("a");
+    info.classList.add("ingredients")
+    info.innerText = dessert.fields.info;
+    dessertContainer.append(info);
+
     //add event listener to have dessert information appear and disappear onclick
     dessertImage.addEventListener("click", function(){
        dessertName.classList.toggle("active");
        country.classList.toggle("active");
        continent.classList.toggle("active");
        ingredients.classList.toggle("active");
+       info.classList.toggle("active");
 
       });
 
     //get ingredients field from airtable
     //loop through array and add each ingredient as a class name
-    dessertContainer.setAttribute('data-ingredients', dessert.fields.ingredients.join(' '));
+    dessertContainer.setAttribute('data-ingredients', dessert.fields.ingredients.map((i) => i.replace(/\s+/g, '').toLowerCase()).join(' '));
+  });
+ }
 
-    //add event listener to filter to add active class
-    //add event listener to input box
-    //onclick input box show image
-    //create function to image toggle with checkbox onclick
-    var almondsFilter = document.querySelector(".almonds-box");
-    almondsFilter.addEventListener("click", function() {
-      if (dessertContainer.classList.contains("almonds")) {
-        dessertImage.style.display = "block";
+function enableFilters() {
+  document.querySelector('.ingredient-filters').addEventListener('change', (event) => {
+    const checkedInputs = document.querySelectorAll('.ingredient-filters input:checked');
+    const checkedIngredients = Array.from(checkedInputs).map((input) => input.value);
+
+    const desserts = document.querySelectorAll('.dessert-container');
+
+    desserts.forEach((dessert) => {
+      dessert.style.display = 'block';
+      if (checkedIngredients.find((ingredient) => dessert.getAttribute('data-ingredients').includes(ingredient))) {
+        dessert.style.display = '';
+      } else {
+        dessert.style.display = 'none';
       }
-    })
+    });
 
 
   });

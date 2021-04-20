@@ -4,48 +4,91 @@ body {
     background-color: #FDECD8;
 }
 
+.title {
+	font-family: fairwater-open-serif, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3rem;
+}
+
 .nav-bar {
-	width: 100vh;
-	height: 30vh;
+	width: 100%;
 	list-style: none;
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 100px;
+	left: -30px;
 	right: 0px;
-	width: 90%;
 	height: 10vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-around;
+	background-color: pink;
 }
 
 .nav-item {
-	text-align: center;
 	font-family: sweet-sans-pro, sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 2.25vw;
+	font-size: 1.75vw;
+	margin: 2.5vw;
+}
+
+/* unvisited link */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+  color: #FF1D8E;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
+  color: #FF1D8E;
 }
 
 .ingredient-filters {
-	margin-top: 20vh;
+	margin-top: 25vh;
 	display: flex;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .ingredient-filters label {
 	position: relative;
 	display: block;
-	padding: .5vw;
-	font-size: 1.5rem;
+	padding: .3vw;
+	font-size: 1rem;
+	font-family: sweet-sans-pro, sans-serif;
+	font-weight: 600;
+	font-style: normal;
 }
 
 .column {
-	flex: 50%;
+	flex: 33%;
 }
 
 .container {
-	margin-top: 20vh;
+	display: grid;
+	margin-top: 10vh;
+	margin-right: 5vw;
+	margin-left: -.5vw;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1vw;
+	grid-row-gap: 0px;
+	width: 100%;
 }
 
 .title {
@@ -53,17 +96,15 @@ body {
 }
 
 .dessert-container {
-	display: block;
-	width: 200px;
-	padding: 1rem;
-	margin: 5vh;
-	background-color: pink;
+	margin: 2vh;
+	width: 190px;
+	justify-items: center;
 }
 
 .image {
 	object-fit: cover;
-	width: 200px;
-	height: 200px;
+	width: 190px;
+	height: 190px;
 }
 
 /*.image.active {
@@ -77,6 +118,11 @@ body {
 
 .name.active {
 	display: block;
+	text-align: center;
+	font-family: fairwater-solid-serif, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
 }
 
 .country {
@@ -85,6 +131,9 @@ body {
 
 .country.active {
 	display: block;
+	font-family: sweet-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .continent {
@@ -93,6 +142,9 @@ body {
 
 .continent.active {
 	display: block;
+	font-family: sweet-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .ingredients {
@@ -101,4 +153,41 @@ body {
 
 .ingredients.active {
 	display: block;
-	font-size
+	width: 190px;
+	font-family: sweet-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.info {
+	display: none;
+}
+
+.info.active {
+	display: block;
+	width: 190px;
+	font-family: sweet-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+@media only screen and (max-width: 900px;) {
+
+	.ingredient-filters {
+		width: 100%;
+		background-color: blue;
+	}
+
+	.ingredient-filters label {
+		font-size: 0.5rem;
+	}
+
+	.column {
+		
+	}
+
+	.container {
+		text-align: center;
+	}
+}
