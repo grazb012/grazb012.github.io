@@ -13,7 +13,7 @@ var base = new Airtable({ apiKey: "keyiFaq9DveHPz98w" }).base(
 // specify functions that will receive the data
 base("desserts")
   .select({
-    view: "europe"
+    view: "australia"
   })
   .eachPage(gotPageOfDesserts, gotAllDesserts);
 
@@ -142,6 +142,15 @@ function enableFilters() {
 
 
   });
+
+     //add event listener to toggle mobile menu
+ let toggleMenu = document.querySelector(".hamburger-menu");
+ let menuStatus = document.querySelector(".mobile-nav");
+
+  toggleMenu.addEventListener("click", function(){
+       menuStatus.classList.toggle("open");
+ });
+  
  }
 
 
