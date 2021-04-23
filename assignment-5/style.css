@@ -1,0 +1,285 @@
+.recipe {
+	margin-left: 40px;
+}
+
+
+.oven {
+	width: 150px;
+	height: 100px;
+	border: 3px solid black;
+	background-color: black;
+}
+
+.degrees {
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+}
+
+.step {
+	display: flex;
+}
+
+.stuff {
+	margin: 20px;
+	border: 3px solid black;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.flour {
+	background-color: lightblue;
+}
+
+.baking-soda {
+	background-color: yellow;
+}
+
+.salt {
+	background-color: lightgreen;
+}
+
+.baking-powder {
+	background-color: lightpink;
+}
+
+.bowl {
+	width: 150px;
+	height: 150px;
+	border: 3px solid black;
+	border-radius: 50%;
+	margin-left: 30px;
+}
+
+.inside {
+	position: relative;
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.flour.inside {
+	left: 10px;
+	top: 10px;
+}
+
+.salt.inside {
+	left: 40px;
+	bottom: 140px;
+}
+
+.baking-soda.inside {
+	left: 10px;
+	bottom: 30px;
+}
+
+.baking-powder.inside {
+	left: 40px;
+	bottom: 180px;
+}
+
+.brown-sugar {
+	background-color: tan;
+}
+
+.dry {
+	width: 120px;
+	height: 120px;
+	background-color: pink;
+	border-radius: 50%;
+}
+
+.dry.inside {
+	bottom: 308px;
+	left: 15px;
+}
+
+.butter {
+	margin-top: 60px;
+	width: 70px;
+	height: 30px;
+	border: 3px solid black;
+	text-align: center;
+	background-color: lightyellow;
+}
+
+.bowl-2 {
+	margin-left: 50px;
+}
+
+.sugar.inside {
+	left: 10px;
+	top: 10px;
+}
+
+.brown-sugar.inside {
+	left: 40px;
+	bottom: 65px;
+}
+
+.butter.inside {
+	left: 35px;
+	bottom: 135px;
+}
+
+.wet {
+	width: 120px;
+	height: 120px;
+	background-color: purple;
+	border-radius: 50%;
+}
+
+.wet.inside {
+	bottom: 232px;
+	left: 15px;
+}
+
+.eggs {
+	display: flex;
+	margin-top: 25px;
+}
+
+.egg {
+	width: 30px;
+	height: 40px;
+	border: 3px solid black;
+	border-radius: 50%;
+	margin: -7px;
+	background-color: white;
+}
+
+.vanilla {
+	background-color: brown;
+}
+
+.wet.inside4 {
+	position: relative;
+	left: 15px;
+	top: 15px;
+}
+
+.cracked-egg {
+	width: 30px;
+	height: 30px;
+	background-color: orange;
+	border-radius: 50%;
+}
+
+.cracked-eggs.inside {
+	display: flex;
+	bottom: 80px;
+	left: 43px;
+}
+
+.vanilla.inside {
+	bottom: 100px;
+	left: 25px;
+}
+
+.wet-mixed {
+	width: 120px;
+	height: 120px;
+	background-color: purple;
+	border-radius: 50%;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.wet-mixed2 {
+	width: 120px;
+	height: 120px;
+	background-color: lightblue;
+	border-radius: 50%;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.chips-bag {
+	width: 50px;
+	height: 80px;
+	border: 3px solid black;
+	background-color: brown;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.dough {
+	width: 120px;
+	height: 120px;
+	background-color: tan;
+	border-radius: 50%;
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.chip {
+	width: 4px;
+	height: 4px;
+	background-color: brown;
+	margin: 9px;
+}
+
+.chips.inside {
+	right: 120px;
+	top: 40px;
+}
+
+.chips-row {
+	display: flex;
+}
+
+.tray {
+	width: 150px;
+	height: 100px;
+	border: 3px solid black;
+	background-color: lightgray;
+	margin-left: 30px;
+	margin-top: 15px;
+}
+
+.cookies.inside {
+	margin-left: 17px;
+	margin-top: 14px;
+}
+
+.cookie {
+	width: 20px;
+	height: 20px;
+	background-color: tan;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.c-row {
+	display: flex;
+}
+
+.time {
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 7px;
+}
+
+.oven {
+	margin-left: 40px;
+}
+
+.mix {
+	margin-left: 30px;
+	margin-top: 50px;
+	width: 80px;
+	height: 40px;
+}
+
+
+
+
+
