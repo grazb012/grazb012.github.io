@@ -3,44 +3,44 @@
 //they/them pronoun corrections
 const pronouns = [
 	{
-		original: ["he's", "she's"],
-		correction: "they're"
+		original: ["he's", "they're"],
+		correction: "she's"
 	},
 	{
-		original: ["he is", "she is"],
-		correction: "they are"
+		original: ["he is", "they are"],
+		correction: "she is"
 	},
 	{
-		original: ["he was", "she was"],
-		correction: "they were"
+		original: ["he was", "they were"],
+		correction: "she was"
 	},
 	{
-		original: ["he has", "she has"],
-		correction: "they have"
+		original: ["he has", "they have"],
+		correction: "she has"
 	},
 	{
-		original: ["he loves", "she loves"],
-		correction: "they love"
+		original: ["he loves", "they love"],
+		correction: "she loves"
 	},
 	{
-		original: ["he becomes", "she becomes"],
-		correction: "they become"
+		original: ["he becomes", "they become"],
+		correction: "she becomes"
 	},
 	{
-		original: ["himself", "herself"],
-		correction: "themself"
+		original: ["himself", "themself"],
+		correction: "herself"
 	},
 	{
-		original: ["he", "she"],
-		correction: "they"
+		original: ["he", "they"],
+		correction: "she"
 	},
 	{
-		original: ["his", "her"],
-		correction: "their"
+		original: ["his", "their"],
+		correction: "her"
 	},
 	{
-		original: ["him"],
-		correction: "them"
+		original: ["him", "them"],
+		correction: "her"
 	}
 ];
 

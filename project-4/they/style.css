@@ -1,51 +1,32 @@
 body {
-	background-color: #FBEEDA;
+	background-color:  #FEDE9E;
 }
 
-.display {
+h1 {
 	text-align: center;
-	font-family: program, sans-serif;
-	font-weight: 700;
+	font-family: ohno-fatface, serif;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 3rem;
-	color: #1C5253;
+	color: #1B4079;
 }
 
-p.display {
-	font-size: 2rem;
-}
-
-.pronouns {
-	font-size: 2rem;
-	margin-bottom: 10px;
-}
-
-.body {
+h2 {
 	font-family: neue-haas-unica, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 1.2;
-	font-size: 1.2rem;
-	color: #1C5253;
-	width: 600px;
-	margin: auto;
+	font-size: 1rem;
+	color: white;
 }
 
 .nav {
 	display: flex;
 	justify-content: space-around;
-	width: 600px;
-	margin: auto;
 	font-family: neue-haas-unica, sans-serif;
-	font-weight: bold;
+	font-weight: 400;
 	font-style: normal;
-	font-size: 1.2rem;
-	color: #1C5253;
-	margin-bottom: 40px;
-}
-
-.nav.top {
-	width: 90vw;
+	color: white;
 }
 
 /* unvisited link */
@@ -72,20 +53,6 @@ a:active {
   text-decoration: none;
 }
 
-table, th, td {
-	border: 2px solid #1C5253;
-	border-collapse: collapse;
-	padding: 10px;
-	margin: auto;
-	width: 600px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-th {
-	color: #1C5253;
-}
-
 .header {
 	width: 600px;
 	margin: auto;
@@ -102,9 +69,8 @@ th {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 1.2rem;
-	background-color: #FBEEDA;
-	color: #1C5253;
-	border: 2px solid #1C5253;
+	background-color: #FEDE9E;
+	border: 2px solid black;
 	border-radius: 5px;
 }
 
@@ -115,11 +81,11 @@ button {
 	font-size: 2rem;
 	padding: 17px;
 	text-align: center;
-	font-family: program, sans-serif;
-	font-weight: 700;
+	font-family: ohno-fatface, serif;
+	font-weight: 100;
 	font-style: normal;
-	background-color: #8BBF9F;
-	color: #1C5253;
+	background-color: #FEDE9E;
+	color: #1B4079;
 }
 
 .bottom {
@@ -133,9 +99,3 @@ button {
 #text {
 	font-size: 1.2rem;
 }
-
-
-
-
-
-
