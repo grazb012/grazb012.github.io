@@ -39,30 +39,30 @@ p.display {
 	font-family: neue-haas-unica, sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 1.2rem;
-	color: #1C5253;
+	font-size: 1.1rem;
+	color: #40a635;
 	margin-bottom: 40px;
 }
 
-.nav.top {
-	width: 90vw;
+#main {
+	font-size: 1.3rem;
 }
 
 /* unvisited link */
 a:link {
-  color: #1C5253;
   text-decoration: none;
+  color: #6EAF87;
 }
 
 /* visited link */
 a:visited {
-  color: #1C5253;
   text-decoration: none;
+  color: #6EAF87;
 }
 
 /* mouse over link */
 a:hover {
-  color: #8BBF9F;
+  color: #1C5253;
   text-decoration: none;
 }
 
@@ -96,16 +96,17 @@ th {
 #text-box {
 	display: block;
 	margin: auto;
-	width: 500px;
-	height: 170px;
+	width: 600px;
+	height: 200px;
 	font-family: neue-haas-unica, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.2rem;
+	font-size: 1.7rem;
 	background-color: #FBEEDA;
 	color: #1C5253;
 	border: 2px solid #1C5253;
 	border-radius: 5px;
+	margin-bottom: -20px;
 }
 
 button {
@@ -120,6 +121,7 @@ button {
 	font-style: normal;
 	background-color: #8BBF9F;
 	color: #1C5253;
+	cursor: pointer;
 }
 
 .bottom {
@@ -132,6 +134,39 @@ button {
 
 #text {
 	font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  	.display {
+  		width: 450px;
+  		display: flex;
+  		margin-left: 10px;
+  	}
+
+  	.body {
+  		width: 450px;
+  		margin-left: 10px;
+    }
+
+    .nav {
+    	width: 450px;
+    	text-align: center;
+    	font-size: 1rem;
+    }
+
+    #main {
+    	font-size: 1.1rem;
+    }
+
+    table {
+    	width: 450px;
+    	font-size: 1rem;
+    }
+
+    #text-box {
+    	width: 450px;
+    	height: 200px;
+    }
 }
 
 

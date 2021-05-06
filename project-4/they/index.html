@@ -11,15 +11,14 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<div class="nav top">
+		<div class="nav main">
+			<a href="../index.html">About</a>
 			<a href="../she/index.html">She/Her/Hers</a>
 			<a href="index.html">They/Them/Theirs</a>
 			<a href="../he/index.html">He/Him/His</a>
 		</div>
 		<div class="header">
-			<a href="../index.html">
 				<h1 class="display">Let's Learn Pronouns!</h1>
-			</a>
 			<h2 class="body">
 				<p>When someone you know changes their preferred pronouns, it can sometimes be confusing and difficult to get used to.</p> 
 
@@ -28,15 +27,17 @@
 				<p>If pronouns are tripping you up, try using this tool to correct yourself.</p>
 			</h2>
 		</div>
-		<h2 class="display pronouns">They/Them/Theirs</h2>
-		<textarea id="text-box" placeholder="Enter Text Here"></textarea>
-		<br><br>
-		<div class="bottom">
-			<br>
-			<button onclick="correctText()" id="button">
-				Correct Me!
-			</button>
-			<p id="text"></p>
+		<div class="text-area">
+			<h2 class="display pronouns">They/Them/Theirs</h2>
+			<textarea id="text-box" placeholder="Ex: She is smart-->They are smart"></textarea>
+			<br><br>
+			<div class="bottom">
+				<br>
+				<button onclick="correctText()" id="button">
+					Correct Me!
+				</button>
+				<p id="text"></p>
+			</div>
 		</div>
 		
 	</body>
